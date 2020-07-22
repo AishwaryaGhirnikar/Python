@@ -1,0 +1,61 @@
+def add(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+
+def mul(a,b):
+    return a*b
+
+def div(a,b):
+    return a/b
+
+def mod(a,b):
+    return a%b
+
+while True:
+    print("operations: \n" "1)add \n" "2)sub \n" "3)mul \n" "4)div \n" "5)mod \n" "6)all \n" )
+
+    try:
+        select = int(input("select desired operation: "))
+
+        a = int(input("enter 1st num: "))
+        b = int(input("enter 2nd num: "))
+
+        if select == 1:
+            print("add =", add(a,b))
+            
+        elif select == 2:
+            print("sub =", sub(a,b))
+            
+        elif select == 3:
+            print("mul =", mul(a,b))
+            
+        elif select == 4:
+            while b == 0:
+                print("Can't divide by 0. Give another number")
+                b = int(input("enter 2nd num: "))
+            print("div =", div(a,b))    
+            
+        elif select == 5:
+            while b == 0:
+                print("Can't divide by 0. Give another number")
+                b = int(input("enter 2nd num: "))
+            print("mod =", mod(a,b))
+            
+        elif select == 6:
+            print("add =", add(a,b))
+            print("sub =", sub(a,b))
+            print("mul =", mul(a,b))
+            while b == 0:
+                print("Can't divide by 0. Give another number")
+                b = int(input("enter 2nd num: "))
+            print("div =", div(a,b))
+            print("mod =", mod(a,b))
+            
+        else:
+            print("Invalid operation selection")
+        
+    except Exception as e:
+        print("Input must be an integer")
+        
