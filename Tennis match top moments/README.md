@@ -2,11 +2,20 @@
 
 In this project, only Python is used to get this project done. Speech analysis is used for this task. When something exciting happens during a game, there is a rise in the commentator’s voice. Let’s take a tennis match as an example for this project. Whenever any player in the match get the point, there is a rise in the commentator’s voice. Both the audience and the commentators have high pitch during that event. We can use these changes in audio to capture interesting moments from a video.
 
+Here is the link for Wimbledon Tennis Match video which is used as an example in this project.
+
+https://www.youtube.com/watch?v=fduc5bZx3ss&t=200s&ab_channel=Wimbledon
+
 Libraries/modules used: Pandas, moviepy, pyloudnorm.
 
 1) Pandas is used to read .CSV file.
 2) moviepy is used to break videos and to convert them into audio(.WAV file) and concatenate the broken videos.
 3) pyloudnorm is used to measure the loudness of each broken videos.
+
+You can also find these libraries with the help of following links.
+* https://pypi.org/project/moviepy/
+* https://pypi.org/project/pyloudnorm/
+* https://zulko.github.io/moviepy/
 
 The process we’ll be following is added down below:
 1. Input the video file
